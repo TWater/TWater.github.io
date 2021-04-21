@@ -44,7 +44,7 @@ img {
   background-color: #49b1f5;
 }
 
-/* 透明 */
+/* 所有背景（包括归档页、标签页、分类页等） */
 div#post{
   background: rgba(255, 255, 255, 0.8);
 }
@@ -60,6 +60,14 @@ div#tag{
 div#category{
   background: rgba(255, 255, 255, 0.8);
 }
+/* 侧栏卡片半透明 */
+ .card-widget{
+  background: rgba(255, 255, 255, 0.8)!important;
+}
+/* 所有背景（包括首页卡片、文章页、页面页等） */
+#recent-posts>.recent-post-item,.layout>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post{
+    background: rgba(255,255,255,0.8);
+}
 
 /* 页脚透明 */
 #footer{
@@ -69,3 +77,12 @@ div#category{
 #page-header{
   background: transparent!important;
 }
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+      background: transparent!important;
+    }
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+    }
