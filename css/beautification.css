@@ -44,14 +44,28 @@ img {
   background-color: #49b1f5;
 }
 
-/* 文章页背景 */
-.layout_post>#post {
-    /* 以下代表白色透明度为0.8 */
-    background: rgba(255,255,255,.8);
+/* 透明 */
+div#post{
+  background: rgba(255, 255, 255, 0.8);
+}
+div#page{
+  background: rgba(255, 255, 255, 0.8);
+}
+div#archive{
+  background: rgba(255, 255, 255, 0.8);
+}
+div#tag{
+  background: rgba(255, 255, 255, 0.8);
+}
+div#category{
+  background: rgba(255, 255, 255, 0.8);
 }
 
-/* 所有背景（包括首页卡片、文章页、页面页等） */
-#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
-    /* 以下代表白色透明度为0.3 */
-    background: rgba(255,255,255,.8);
+/* 页脚透明 */
+#footer{
+  background: transparent!important;
+}
+/* 头图透明 */
+#page-header{
+  background: transparent!important;
 }
